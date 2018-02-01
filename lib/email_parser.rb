@@ -10,7 +10,7 @@ class EmailParser
   def parse
     comma = @list.split(", ")
     space = @list.split(" ")
-    # @@list << self
-    split
+    split = comma + space
+    split.uniq!
   end
 end
