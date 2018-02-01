@@ -1,10 +1,13 @@
 class EmailParser
 
-  attr_accessor :
-  
+  attr_accessor :list
 
-  def parse(str)
-    str.split(", ")
-    @@list << self
+  def initialize(list)
+    @list = list
+  end
+
+  def parse
+    spl = @list.gsub(/,/, '').split(" ")
+    spl.uniq
   end
 end
