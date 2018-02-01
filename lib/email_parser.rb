@@ -8,7 +8,7 @@ class EmailParser
   end
 
   def parse
-    @list.include?(", ") split = @list.split(", ") || split = @list.split(" ")
+    @list.include?(", ") ? split = @list.split(", ") : split = @list.split(" ")
     # split.reject!{|e| e == " "}
     split
   end
