@@ -5,7 +5,6 @@ class EmailParser
   def initialize(list)
     @list = list
     # @@all << self
-    parse(list)
   end
 
   def parse
