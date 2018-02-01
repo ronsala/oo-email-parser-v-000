@@ -8,9 +8,7 @@ class EmailParser
   end
 
   def parse
-    comma = @list.split(", ")
-    space = @list.split(" ")
-    split = comma + space
-    split.uniq!
+    split = @list.split(/[\s,]/)
+    split #.uniq!
   end
 end
