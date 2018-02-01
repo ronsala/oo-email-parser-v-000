@@ -8,7 +8,8 @@ class EmailParser
   end
 
   def parse
-    split = @list.split(" ")
+    comma = @list.split(", ")
+    space = @list.split(" ")
     # @@list << self
     split
   end
