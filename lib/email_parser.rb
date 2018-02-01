@@ -9,6 +9,6 @@ class EmailParser
 
   def parse
     split = @list.split(/[\s,]/)
-    split #.uniq!
+    split.reject!(" ")
   end
 end
