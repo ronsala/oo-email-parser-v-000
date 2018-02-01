@@ -9,7 +9,7 @@ class EmailParser
 
   def parse
     split = @list.split(", ")
-    split = split.split(" ")
+    split = @list.split(" ")
     # split.reject!{|e| e == " "}
     split
   end
