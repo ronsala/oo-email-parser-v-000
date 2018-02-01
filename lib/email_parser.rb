@@ -8,8 +8,8 @@ class EmailParser
     parse(list)
   end
 
-  def parse(list)
-    split = list.split(", ")
+  def parse
+    split = @list.split(", ")
     # @@list << self
     split
   end
