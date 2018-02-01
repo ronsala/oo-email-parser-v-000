@@ -12,6 +12,6 @@ class EmailParser
     # spl = @spl.split(",")
     # split.reject!{|e| e == " "}
     spl = @list.gsub(/,/, '').split(" ")
-    spl
+    spl.uniq
   end
 end
