@@ -1,10 +1,16 @@
 class EmailParser
 
-  attr_accessor :
-  
+  attr_accessor :list
 
-  def parse(str)
-    str.split(", ")
-    @@list << self
+  def initialize(list)
+    @list = list
+    # @@all << self
+    parse(list)
+  end
+
+  def parse(list)
+    split = list.split(", ")
+    # @@list << self
+    split
   end
 end
